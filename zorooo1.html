@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .header{
+                background-color: aqua;
+                padding: 15px;
+            }
+            .menu{
+                float: left;
+                width: 20%;
+            }
+            .menuitem{
+                padding: 8px;
+                margin-top: 7px;
+                border-bottom: 1px solid cyan;
+                overflow: auto;
+            }
+            .main{
+                float: left;
+                width: 60%;
+                padding: 0 20px;
+                overflow: hidden;
+            }
+            .right{
+                background-color: lightblue;
+                float: left;
+                width: 20%;
+                padding: 10px 15px;
+                margin-top: 7px;
+            }
+            .footer{
+                background-color: #f1f1f1;
+                text-align: center;
+                padding: 10px;
+                margin-top: 7px;
+                font-size: 12px;
+            }
+            marquee{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            /*media query in CSS targets tablet with a width of 800px*/
+            @media only screen and (max-width:800px){
+                /*for tablets: */
+                .main{
+                    width: 80%;
+                    padding: 0;
+                }
+                .right{
+                    width: 100%;
+                }
+            }
+            @media only screen and (max-width:500px){
+                .menu{
+                    width: 100%;
+                }
+                .main{
+                    width: 100%;
+                    padding: 0€;
+                }
+                .right{
+                    width: 100%;
+                }
+            }
+
+
+        </style>
+
+        <title>Nepal</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Nepal</h1>
+            <h3>8th wonder of the world</h3>
+        </div>
+        <div style="overflow: auto;">
+        <div class="menu">
+            <div class="menuitem">Food</div>
+            <div class="menuitem">Transport</div>
+            <div class="menuitem">History</div>
+            <div class="menuitem">Gallery</div>
+        </div>
+        <div class="main">
+            <h2>Brief Introduction</h2>
+            <p>Nepal (English: /nɪˈpɔːl/;[14] Nepali: नेपाल [nepal]), officially the Federal Democratic Republic of Nepal (Nepali: सङ्घीय लोकतान्त्रिक गणतन्त्र नेपाल), is a landlocked country in South Asia. It is mainly situated in the Himalayas, but also includes parts of the Indo-Gangetic Plain. It borders the Tibet Autonomous Region of China to the north, and India in the south, east, and west, while it is narrowly separated from Bangladesh by the Siliguri Corridor, and from Bhutan by the Indian state of Sikkim. Nepal has a diverse geography, including fertile plains, subalpine forested hills, and eight of the world's ten tallest mountains, including Mount Everest, the highest point on Earth. Kathmandu is the nation's capital and the largest city. Nepal is a multi-ethnic, multi-lingual, multi-religious and multi-cultural state, with Nepali as the official language.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5YDdhhoxnUfxewiTQ2ym4ELlKIaHcHKvZYQ&usqp=CAU" style="width: 100%; height=350px;">
+        </div>
+        <div class="right">
+            <h2>Full Name?</h2>
+            <p>According to Hindu mythology, Nepal derives its name from an ancient Hindu sage called Ne, referred to variously as Ne Muni or Nemi. According to Pashupati Purana, as a place protected by Ne, the country in the heart of the Himalayas came to be known as Nepal. The word pala in Pali language means to protect. Consequently, Nepala translates to protected by Ne. According to Nepal Mahatmya, of 30 chapters about the Nepal Tirtha (pilgrimage) region, a regional text that claims to be a part of the Skanda Purana, the largest Mahāpurāṇa, Nemi was charged with protection of the country by Pashupati.
+
+                According to Buddhist mythology, Manjushri Bodhisattva drained a primordial lake of serpents to create the Nepal valley and proclaimed that Adi-Buddha Ne would take care of the community that would settle it. As the cherished of Ne, the valley would be called Nepal.
+                
+                According to Gopalarajvamshavali, the genealogy of ancient Gopala dynasty compiled circa 1380s, Nepal is named after Nepa the cowherd, the founder of the Nepali scion of the Abhiras. In this account, the cow that issued milk to the spot, at which Nepa discovered the Jyotirlinga of Pashupatinath upon investigation, was also named Ne.</p>
+            <h2>Where?</h2>
+            <p>The history of Nepal is intertwined with the history of the broader Indian subcontinent and the surrounding regions, comprising the areas of South Asia and East Asia.
+
+                Nepal is a multi-ethnic, multiracial, multicultural, multi-religious, and multilingual country. The most spoken language is Nepali followed by several other ethnic languages.
+                
+                The Kingdom of Nepal was established in 1768 and started a campaign of unifying what would form the modern territories of Nepal. Some former territories had been lost due to the Sino-Nepalese War. The conflict ended with both victories and losses with the kingdom ultimately accepting tributary status with the Qing dynasty of China from 1792 to 1865.[1] The Anglo-Nepalese War ended in British victory and resulted in the ceding some Nepalese territory in the Treaty of Sugauli. In a historical vote for the election of the constituent assembly, the Nepalese parliament voted to abolish the monarchy in June 2006. Nepal became a federal republic on 28 May 2008 and was formally renamed the 'Federal Democratic Republic of Nepal' ending the 200-year-old reign of the Shah monarchs.</p>
+            <h2>Religion?</h2>
+            <p>The main religions followed in Nepal are Hinduism, Buddhism, Islam, Kirat, and Christianity. As per the census of 2011, 81.3% of the Nepalese population is Hindu, 9.0% is Buddhist 4.4% is Muslim, 3.0% is Kirant/Yumaist, 1.4% is Christian, and 0.9% follows other religions.</p>
+
+        </div>
+    </div>
+    <div class="footer">
+        <marquee scrollamount="15">Discover Nepal's beauty and culture through the Nepal Tourism Board. Your complete resource for accommodation, events, activities, and vacation preparation.</marquee>
+    </div>
+    </body>
+</html>
