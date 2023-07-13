@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    background-color: #eee8e8;
+    padding: 15px;
+}
+.menu{
+    float: left;
+    width: 20%;
+}
+.menuitem{
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #b3b7c9;
+    overflow: auto;
+}
+.main{
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.right{
+    background-color: lightblue;
+    float: left;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 7px;
+}
+.footer{
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 7px;
+    font-size: 12px;
+}
+marquee{
+    font-size: 20px;
+    font-weight: bold;
+}
+/*media query in CSS targets tablet with a width of 800px*/
+@media only screen and (max-width:800px){
+    /*for tablets: */
+    .main{
+        width: 80%;
+        padding: 0;
+    }
+    .right{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px){
+    .menu{
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+        padding: 0€;
+    }
+    .right{
+        width: 100%;
+    }
+}
+.box{
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+
+}
+p.uppercase{
+    text-transform: uppercase;
+    text-indent: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue,0 0 5px darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
