@@ -2,80 +2,12 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            *{
-                box-sizing: border-box;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-            .header{
-                background-color: aqua;
-                padding: 15px;
-            }
-            .menu{
-                float: left;
-                width: 20%;
-            }
-            .menuitem{
-                padding: 8px;
-                margin-top: 7px;
-                border-bottom: 1px solid cyan;
-                overflow: auto;
-            }
-            .main{
-                float: left;
-                width: 60%;
-                padding: 0 20px;
-                overflow: hidden;
-            }
-            .right{
-                background-color: lightblue;
-                float: left;
-                width: 20%;
-                padding: 10px 15px;
-                margin-top: 7px;
-            }
-            .footer{
-                background-color: #f1f1f1;
-                text-align: center;
-                padding: 10px;
-                margin-top: 7px;
-                font-size: 12px;
-            }
-            marquee{
-                font-size: 20px;
-                font-weight: bold;
-            }
-            /*media query in CSS targets tablet with a width of 800px*/
-            @media only screen and (max-width:800px){
-                /*for tablets: */
-                .main{
-                    width: 80%;
-                    padding: 0;
-                }
-                .right{
-                    width: 100%;
-                }
-            }
-            @media only screen and (max-width:500px){
-                .menu{
-                    width: 100%;
-                }
-                .main{
-                    width: 100%;
-                    padding: 0€;
-                }
-                .right{
-                    width: 100%;
-                }
-            }
-
-
-        </style>
+        <link rel="stylesheet" href="style.css">
 
         <title>Nepal</title>
     </head>
     <body>
-        <div class="header">
+        <div class="header sticky">
             <h1>Nepal</h1>
             <h3>8th wonder of the world</h3>
         </div>
@@ -89,7 +21,8 @@
         <div class="main">
             <h2>Brief Introduction</h2>
             <p>Nepal (English: /nɪˈpɔːl/;[14] Nepali: नेपाल [nepal]), officially the Federal Democratic Republic of Nepal (Nepali: सङ्घीय लोकतान्त्रिक गणतन्त्र नेपाल), is a landlocked country in South Asia. It is mainly situated in the Himalayas, but also includes parts of the Indo-Gangetic Plain. It borders the Tibet Autonomous Region of China to the north, and India in the south, east, and west, while it is narrowly separated from Bangladesh by the Siliguri Corridor, and from Bhutan by the Indian state of Sikkim. Nepal has a diverse geography, including fertile plains, subalpine forested hills, and eight of the world's ten tallest mountains, including Mount Everest, the highest point on Earth. Kathmandu is the nation's capital and the largest city. Nepal is a multi-ethnic, multi-lingual, multi-religious and multi-cultural state, with Nepali as the official language.</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5YDdhhoxnUfxewiTQ2ym4ELlKIaHcHKvZYQ&usqp=CAU" style="width: 100%; height=350px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5YDdhhoxnUfxewiTQ2ym4ELlKIaHcHKvZYQ&usqp=CAU" style="width: 100%; height:350px;">
+            
         </div>
         <div class="right">
             <h2>Full Name?</h2>
@@ -108,6 +41,10 @@
             <p>The main religions followed in Nepal are Hinduism, Buddhism, Islam, Kirat, and Christianity. As per the census of 2011, 81.3% of the Nepalese population is Hindu, 9.0% is Buddhist 4.4% is Muslim, 3.0% is Kirant/Yumaist, 1.4% is Christian, and 0.9% follows other religions.</p>
 
         </div>
+        <div class="img">
+            <p><img src="data:image/png;base64,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" alt="nepal">The national flag of Nepal is the world's only national flag that is non-quadrilateral in shape. The flag is a simplified combination of two single pennons, the vexillological word for a pennant. Its crimson red is the color of the rhododendron, the country's national flower. Red is also the sign of victory in war. The blue border is the color of peace. Until 1962, the flag's emblems, the sun and the crescent moon, had human faces. They were removed to modernize the flag. The faces remained on the sun and the moon on the Royal Standard until the abolition of the monarchy in 2008.
+
+            The blue border symbolizes the peace and harmony that has been prevalent in the country since the age of Gautama Buddha, who was born in Nepal. The crimson red is Nepal's national color, and it indicates the brave spirits of the Nepalese people. The two triangles symbolize the Himalaya Mountains and represent the two major religions, Hinduism and Buddhism. The red triangular flag has been a Hindu symbol of victory since the time of Ramayana and Mahabharata. The depiction of celestial bodies represents permanence, the hope that Nepal will last as long as the sun and the moon. The moon symbolizes that the Nepalese are soothing and calm, while the sun symbolizes fierce resolve. The moon also symbolizes the shades and the cool weather of the Himalayas, whereas the sun symbolizes the heat and the high temperature at the lower part of Nepal. Another interpretation: The flag's shape symbolizes a Nepalese pagoda. Putting a mirror at the side of the flag closest to the flagpole will generate an image of a pagoda.</p></div>
     </div>
     <div class="footer">
         <marquee scrollamount="15">Discover Nepal's beauty and culture through the Nepal Tourism Board. Your complete resource for accommodation, events, activities, and vacation preparation.</marquee>

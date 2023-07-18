@@ -76,3 +76,37 @@ p.uppercase{
     text-shadow: 1px 1px 2px black, 0 0 25px blue,0 0 5px darkblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+div.fixed{
+    position: fixed;
+    bottom: 500px;
+    right: 1000px;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+div.static{
+    position: static;
+    left: 30px;
+    border: 3px solid #73AD21;
+}
+div.relative{
+    position: relative;
+    left: 30px;
+    border: 3px solid #73AD21;
+}
+div.sticky{
+    position: sticky;
+    top: 0;
+    background-color: #54497e9c;
+    border: 2px;
+}
+div.he{
+    width: 200px;
+    height: 65px;
+    background-color: #a8ca20a3;
+    overflow: scroll;
+}
+.img{
+    float: right;
+    border: solid black;
+    border-style: dotted;
+}
