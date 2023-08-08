@@ -1,112 +1,33 @@
 *{
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.header{
-    background-color: #eee8e8;
-    padding: 15px;
+.container{
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
 }
-.menu{
-    float: left;
-    width: 20%;
+.title{
+    margin-bottom: 10px;
+    text-decoration: aliceblue;
 }
-.menuitem{
-    padding: 8px;
-    margin-top: 7px;
-    border-bottom: 1px solid #b3b7c9;
-    overflow: auto;
+.photogallery{
+    display: flex;
+    gap: 20px;
 }
-.main{
-    float: left;
-    width: 60%;
-    padding: 0 20px;
-    overflow: hidden;
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-.right{
-    background-color: lightblue;
-    float: left;
-    width: 20%;
-    padding: 10px 15px;
-    margin-top: 7px;
+.photo img{
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
 }
-.footer{
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px;
-    margin-top: 7px;
-    font-size: 12px;
-}
-marquee{
-    font-size: 20px;
-    font-weight: bold;
-}
-/*media query in CSS targets tablet with a width of 800px*/
-@media only screen and (max-width:800px){
-    /*for tablets: */
-    .main{
-        width: 80%;
-        padding: 0;
+@media (max-width: 768px){
+    .photogallery{
+        flex-direction: column;
     }
-    .right{
-        width: 100%;
-    }
-}
-@media only screen and (max-width:500px){
-    .menu{
-        width: 100%;
-    }
-    .main{
-        width: 100%;
-        padding: 0€;
-    }
-    .right{
-        width: 100%;
-    }
-}
-.box{
-    width: 300px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-
-}
-p.uppercase{
-    text-transform: uppercase;
-    text-indent: 20px;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue,0 0 5px darkblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-div.fixed{
-    position: fixed;
-    bottom: 500px;
-    right: 1000px;
-    width: 300px;
-    border: 3px solid #73AD21;
-}
-div.static{
-    position: static;
-    left: 30px;
-    border: 3px solid #73AD21;
-}
-div.relative{
-    position: relative;
-    left: 30px;
-    border: 3px solid #73AD21;
-}
-div.sticky{
-    position: sticky;
-    top: 0;
-    background-color: #54497e9c;
-    border: 2px;
-}
-div.he{
-    width: 200px;
-    height: 65px;
-    background-color: #a8ca20a3;
-    overflow: scroll;
-}
-.img{
-    float: right;
-    border: solid black;
-    border-style: dotted;
 }
