@@ -25,6 +25,6 @@ function printPI(){
     bookingObject.booking5='Booking5';
     document.getElementById("demo2").innerHTML=booking;
     document.getElementById("demo3").innerHTML="Array element=<br>"+bookingValue;
-    document.getElementById("demo4").innerHTML=bookingObject;
+    document.getElementById("demo4").innerHTML=JSON.stringify(bookingObject);
     document.getElementById("demo5").innerHTML="Object element=<br>"+bookingObjectValue;
 }
