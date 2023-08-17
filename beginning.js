@@ -28,3 +28,9 @@ function printPI(){
     document.getElementById("demo4").innerHTML=JSON.stringify(bookingObject);
     document.getElementById("demo5").innerHTML="Object element=<br>"+bookingObjectValue;
 }
+
+function operatorExamples(){
+    let a="20";
+    let b="5";
+    document.getElementById("operator").innerHTML=(a+" "+b);
+}
