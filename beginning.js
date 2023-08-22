@@ -42,5 +42,13 @@ function dropdownonChange(){
 function checkoutput(){
     let a="Hello this is \"CSIT\" 2nd";
     let b=a.slice(5,10);
+    let c=a.substring(0,3);
+    let text="Please choose CSIT or BBA!";
+    let newtext=text.replace("BBA","BCA");
+    /*text.replaceall() for replacing BBA in the whole paragraph.
+    text.replace only replaces the first match */
     document.getElementById("check").innerHTML=b;
+    document.getElementById("check1").innerHTML=c;
+    document.getElementById("check2").innerHTML=text;
+    document.getElementById("check3").innerHTML=newtext;
 }
