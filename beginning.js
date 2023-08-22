@@ -34,3 +34,13 @@ function operatorExamples(){
     let b="5";
     document.getElementById("operator").innerHTML=(a+" "+b);
 }
+
+function dropdownonChange(){
+    let value=document.getElementById("Numbers").value;
+    document.getElementById("selected").innerHTML="The selected:"+value
+}
+function checkoutput(){
+    let a="Hello this is \"CSIT\" 2nd";
+    let b=a.slice(5,10);
+    document.getElementById("check").innerHTML=b;
+}
