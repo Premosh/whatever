@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="javascript_example.js"></script>
+</head>
+
+<body>
+    <form id="contactForm">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" inputmode="email" autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender" value="male" , id="male"> Male
+                    <input type="radio" name="gender" , value="female" , id="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td> <label>Accept License:</label>
+                    Yes: <input type="checkbox" id="acceptLicenseYes" value="Yes, I accept">
+                    No: <input type="checkbox" id="acceptLicenseNo" value="No, I don't accept"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="country">Select your country:</label>
+                    <select id="country" name="country">
+                        <option value="nepal">Nepal</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="course">Select your course:</label>
+                    <select id="course" name="course">
+                        <option value=""></option>
+                        <option value="BSW">BSW</option>
+                        <option value="BCA">BCA</option>
+                        <option value="CSIT">CSIT</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <h4 style="color:red" id="error"></h4>
+            </tr>
+            <tr style="height: 20px;"></tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+    <p id="formData"></p>
+</body>
+
+</html>
