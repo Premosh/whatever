@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="jquery_example.js"></script>
+    <title>This is an example for jQuery get form values</title>
+  </head>
+
+  <body>
+    <h3>This an example of jQuery get form values :</h3>
+    <form id="inputForm" action="#">
+      <h3>Please Enter the details :</h3>
+      <div>
+        Name :
+        <input type="text" , name="name" id="fname" autocomplete="off" /> <br />
+        <br />
+        Gender : <br />
+        <input type="radio" name="gr" value="male" /> Male
+        <input type="radio" name="gr" value="female" /> Female <br /><br />
+        Select Department :
+        <select name="dept">
+          <option> </option>
+          <option>Bsc CSIT</option>
+          <option>BCA</option>
+          <option>Engg</option>
+          <option>HR</option></select
+        ><br /><br />
+        <input type="submit" id="subm" />
+      </div>
+    </form>
+    <table style="border: 1px solid gray">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Local Name</th>
+          <th>Country code:</th>
+          <th>Fixed</th>
+          <th>Global</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody id="apiDataList"></tbody>
+    </table>
+  </body>
+</html>
